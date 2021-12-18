@@ -1,0 +1,58 @@
+body {
+     background: rgb(255, 255, 255);
+     font-family: 'Courier New', Courier, monospace;
+     color: rgb(26, 26, 26);
+     
+ }
+ 
+ header {
+    color:rgb(199, 199, 199);
+    padding: 10px 10px 10px; 
+    height: 100;
+ }
+ 
+ h1 {
+     color: rgb(22, 22, 22);
+     padding: 10px 10px 10px 10px; 
+     font-size: 80px;
+ }
+ 
+ div{
+     background: rgb(255, 255, 255);
+     width: 30%;
+     padding: 3%;
+ }
+ section{
+     background:rgb(255, 255, 255);
+     padding: 10px;
+     display: flex;
+ }
+
+ nav{
+    float:right;
+    padding-right: 20px;
+}
+
+ ul {
+    list-style: none;
+    padding: 0;}
+
+li {
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    padding: 2px;
+    margin-left: 20px;
+    
+    }
+
+li:hover {
+  color: red;}
+
+button {
+    border-radius: 10px;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    background: rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+}
+
