@@ -2,26 +2,32 @@ body {
      background: rgb(255, 255, 255);
      font-family: 'Courier New', Courier, monospace;
      color: rgb(26, 26, 26);
-     padding: 1% 5% 5% 5%;
+     
+     
  }
  
  header {
-    background-color:rgb(255, 255, 255);
+    width: 100%;
+    
+    
     padding: 10px 10px 10px 10px; 
+    
+    
  }
  
  nav{
     float:right;
     width: 100%;
-    background-color:rgb(255, 255, 255);
+    
     padding: 10px 10px 10px 10px; 
-   
+    
     
 }
 
 ul {
     list-style: none;
-    background-color:rgb(255, 255, 255);
+    
+    
 }
 
 li {
@@ -32,9 +38,31 @@ li {
     float: right;
     margin: 10px;
     }
+
+    .menu{
+        
+    }
  
+    
+    a:link{
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-weight: 700;
+    }
+
+    a:visited {
+        color: rgb(199, 199, 199);
+    }
+
+    a:hover {
+        background-color:yellow;
+        padding: 5 5 5 5;
+    }
+
 .hero {
-    background-color: rgb(255, 255, 255);
+    
+    position: relative;
+    top: 500;
 }
 
 .hello {
@@ -70,20 +98,10 @@ h1 {
      padding: 3%;
  }
  section{
-     background:rgb(255, 255, 255);
+    
      padding: 10px;
      display: flex;
  }
-
- 
-
- 
-    
-
-
-
-li:hover {
-  color: red;}
 
 button {
     border-radius: 10px;
@@ -93,3 +111,33 @@ button {
     color:rgb(255, 255, 255);
 }
 
+footer {
+    
+	background-color: #ffffff;
+	bottom: 0;
+	color: #d6d6d6;
+	display: flex;
+	justify-content: right;
+	position: fixed;
+	width: 99%;
+	z-index: 1
+}
+
+.footer-content-right {
+    padding-right:5px;
+    margin-top:20px;
+    float:right;
+  }
+  
+  .icon-style {
+    height:40px;
+    margin-left:10px;
+    margin-right: 10px;
+    margin-top:5px;
+    padding: 1 1 1 1;
+  }
+  
+  .icon-style:hover {
+    background-color:yellow;
+    
+  }
