@@ -7,7 +7,7 @@ body {
  }
  
  header {
-    width: 100%;
+    width: 99%;
     
     
     padding: 10px 10px 10px 10px; 
@@ -141,17 +141,4 @@ footer {
     background-color:yellow;
     
   }
-  input[type="checkbox"] {
-    content: url('../assets/e_clave_still.png');
-    display: block;
-   
-    height: 500px;
-}
-input[type="checkbox"]:checked {
-    content: url('../assets/ecalve_ani.gif');
-}
-.native-hidden {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
+ 
