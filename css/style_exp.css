@@ -1,144 +1,76 @@
 body {
-     background: rgb(255, 255, 255);
-     font-family: 'Courier New', Courier, monospace;
-     color: rgb(26, 26, 26);
-     
-     
- }
- 
- header {
-    width: 99%;
-    
-    
-    padding: 10px 10px 10px 10px; 
-    
-    
- }
- 
- nav{
-    float:right;
-    width: 100%;
-    
-    padding: 10px 10px 10px 10px; 
+    background: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(26, 26, 26);
     
     
 }
-
-ul {
-    list-style: none;
-    
-    
-}
-
-li {
-    display: inline-block;
-    background-color:rgb(255, 255, 255);
-    width: 100px;
-    text-align: center;
-    float: right;
-    margin: 10px;
-    }
-
-    .menu{
-        
-    }
- 
-    
-    a:link{
-        text-decoration: none;
-        color: rgb(0, 0, 0);
-        font-weight: 700;
-    }
-
-    a:visited {
-        color: rgb(199, 199, 199);
-    }
-
-    a:hover {
-        background-color:yellow;
-        padding: 5 5 5 5;
-    }
 
 .hero {
-    
-    position: relative;
-    top: 500;
+   
+   position: relative;
+   top: 500;
 }
 
 .hello {
-    background-color: rgb(255, 255, 255);
-    width: 40%;
+   background-color: rgb(255, 255, 255);
+   width: 40%;
 }
 
 .hello_body {
-    color: rgb(22, 22, 22); 
-    font-size: 20px;
-    letter-spacing: 0.5px;
-    font-weight: 500;
+   color: rgb(22, 22, 22); 
+   font-size: 20px;
+   letter-spacing: 0.5px;
+   font-weight: 500;
 }
 
 h1 {
-     color: rgb(22, 22, 22);
-     padding: 0; 
-     font-size: 80px;
-     line-height: 0.05;
-     
-
- }
-
- h3 {
-    color: rgb(22, 22, 22); 
-    font-size: 20px;
-    letter-spacing: 0.5px;
-}
- 
- div{
-     background: rgb(255, 255, 255);
-     width: 25%;
-     padding: 3%;
- }
- section{
+    color: rgb(22, 22, 22);
+    padding: 0; 
+    font-size: 80px;
+    line-height: 0.05;
     
-     padding: 10px;
-     display: flex;
- }
+
+}
+
+h3 {
+   color: rgb(22, 22, 22); 
+   font-size: 20px;
+   letter-spacing: 0.5px;
+}
+
+div{
+    background: rgb(255, 255, 255);
+    width: 25%;
+    padding: 3%;
+}
+section{
+   
+    padding: 10px;
+    display: flex;
+}
 
 button {
-    border-radius: 10px;
-    padding: 10px;
+   border-radius: 10px;
+   padding: 10px;
+   font-family: 'Courier New', Courier, monospace;
+   background: rgb(0, 0, 0);
+   color:rgb(255, 255, 255);
+}
+
+.btn {
+    
+    border-color: black;
+    color: black;
     font-family: 'Courier New', Courier, monospace;
-    background: rgb(0, 0, 0);
-    color:rgb(255, 255, 255);
-}
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 15px;
 
-footer {
-    
-	background-color: #ffffff;
-	bottom: 0;
-	color: #d6d6d6;
-	display: flex;
-	justify-content: right;
-	position: fixed;
-	width: 99%;
-	z-index: 1
-}
-
-.footer-content-right {
-    padding-right:5px;
-    margin-top:20px;
-    float:right;
   }
   
-  .icon-style {
-    height:40px;
-    margin-left:10px;
-    margin-right: 10px;
-    margin-top:5px;
-    padding: 1 1 1 1;
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: black;
+    color: white;
   }
-  
-  .icon-style:hover {
-    background-color:yellow;
-    
-  }
- 
