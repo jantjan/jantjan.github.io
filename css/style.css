@@ -1,8 +1,14 @@
+::selection {
+    
+    background: yellow;
+  }
+
 body {
      background: rgb(255, 255, 255);
      font-family: 'Courier New', Courier, monospace;
      color: rgb(26, 26, 26);
      
+    
      
  }
  
@@ -15,12 +21,14 @@ body {
 .hello {
     background-color: rgb(255, 255, 255);
     width: 40%;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 .hello_body {
     color: rgb(22, 22, 22); 
     font-size: 20px;
     letter-spacing: 0.5px;
+    font-family: 'Courier New', Courier, monospace;
     font-weight: 500;
 }
 

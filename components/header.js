@@ -4,19 +4,19 @@ class Header extends HTMLElement {
     }
   
 
-  
-  
   connectedCallback() {
     this.innerHTML = `
       <style>
       
         header {
+            font-family: 'Courier New', Courier, monospace;
             width: 99%;
             padding: 10px 10px 10px 10px;   
         }
      
         nav{
-            float:right;
+          font-family: 'Courier New', Courier, monospace;
+          float:right;
             width: 100%;
             padding: 10px 10px 10px 10px;     
         }
@@ -88,7 +88,7 @@ class Header extends HTMLElement {
         <nav>
             <ul >
                 <li class="menu"> <a href="https://jantjan.github.io/portfolio.html"> Portfolio </a></li>
-                <li class="menu"> <a href="https://jantjan.github.io/experience.html"> Experience </a></li>
+                <li class="menu"> <a href="https://jantjan.github.io/experience.html"> About </a></li>
                 <li class="menu"> <a href="index.html"> Home </a></li>
             </ul>
         </nav>
@@ -96,7 +96,7 @@ class Header extends HTMLElement {
 
     <footer class="footer-content-right">
         <a href="https://github.com/jantjan" target="_blank"><img src="assets/github_symbol.png" class="icon-style" alt="Github icon"></a>
-        <a href="https://www.instagram.com/by_jtjan/" target="_blank"><img src="assets/insta_symbol.png" class="icon-style" alt="Twitter icon"></a>
+        <a href="https://www.youtube.com/channel/UCqiFnOFhlF2U64tgvXpUS0w" target="_blank"><img src="assets/yt_symbol.png" class="icon-style" alt="Twitter icon"></a>
         <a href="mailto:tjan.janice@gmail.com" target="_blank"><img src="assets/email_symbol.png" class="icon-style" alt="Emailicon"></a>
     </footer>
 
