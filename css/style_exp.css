@@ -26,7 +26,7 @@ h3 {
 
 div{
     background: rgb(255, 255, 255);
-    width: 25%;
+    
     padding: 3%;
 }
 section{
@@ -42,6 +42,35 @@ button {
     background: rgb(0, 0, 0);
     color:rgb(255, 255, 255);
  }
+
+ .grid {
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows: 70px minmax(160px, auto) auto;
+    grid-template-areas: 
+      'header header'
+      'leftbar main'
+      'footer footer';
+    column-gap: 20px;
+    row-gap: 16px;
+  }
+  
+  .page-header {
+    grid-area: header;
+  }
+  
+  .page-leftbar {
+    grid-area: leftbar;
+  }
+  
+  .page-main {
+    grid-area: main;
+  }
+  
+  .page-footer {
+    grid-area: footer;
+  }
+  
  
  .btn {
      

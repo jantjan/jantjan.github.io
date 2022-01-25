@@ -1,90 +1,70 @@
 ::selection {
-    
     background: yellow;
-  }
-
+}
 body {
-     background: rgb(255, 255, 255);
-     font-family: 'Courier New', Courier, monospace;
-     color: rgb(26, 26, 26);
-     
-    
-     
- }
- 
+    background: rgb(255, 255, 255);
+    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    font-weight: bold;
+    color: rgb(26, 26, 26);
+}
 .hero {
-    
     position: relative;
     top: 500;
 }
-
 .hello {
     background-color: rgb(255, 255, 255);
-    width: 40%;
+    width: 50%;
     font-family: Helvetica, Arial, sans-serif;
 }
-
 .hello_body {
-    color: rgb(22, 22, 22); 
+    color: rgb(22, 22, 22);
     font-size: 20px;
     letter-spacing: 0.5px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 500;
 }
-
 h1 {
-     color: rgb(22, 22, 22);
-     padding: 0; 
-     font-size: 80px;
-     line-height: 0.05;
-     
-
- }
-
- h3 {
-    color: rgb(22, 22, 22); 
+    color: rgb(22, 22, 22);
+    padding: 0;
+    font-size: 80px;
+    line-height: 0.05;
+}
+h3 {
+    color: rgb(22, 22, 22);
     font-size: 20px;
     letter-spacing: 0.5px;
 }
- 
- div{
-     background: rgb(255, 255, 255);
-     width: 25%;
-     padding: 3%;
- }
- section{
-    
-     padding: 10px;
-     display: flex;
- }
-
- button {
+div{
+    background: rgb(255, 255, 255);
+    width: 25%;
+    padding: 3%;
+}
+section{
+    padding: 10px;
+    display: flex;
+}
+button {
     border-radius: 10px;
     padding: 10px;
     font-family: Helvetica, Arial, sans-serif;
     background: rgb(0, 0, 0);
     color:rgb(255, 255, 255);
- }
- 
- .btn {
-     
-     border-color: black;
-     background-color: white;
-     color: rgb(0, 0, 0);
-     font-family: Helvetica, Arial, sans-serif;
-     padding: 12px 30px;
-     cursor: pointer;
-     font-size: 15px;
- 
-   }
-   
-   /* Darker background on mouse-over */
-   .btn:hover {
-     border-color: rgb(255, 255, 255);
-     background-color: black;
-     color: white;
-   }
-
+}
+.btn {
+    border-color: black;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    font-family: Helvetica, Arial, sans-serif;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 15px;
+}
+/* Darker background on mouse-over */
+.btn:hover {
+    border-color: rgb(255, 255, 255);
+    background-color: black;
+    color: white;
+}
 .post_it {
     cursor: pointer;
 }
