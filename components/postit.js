@@ -1,5 +1,5 @@
 var checkbox = document.getElementById('checkbox1');
-        var img_1 = 'https://i.imgur.com/a/6hs0JZv.png';
+        var img_1 = 'https://i.imgur.com/FT27YXo.png';
         var img_2 = 'https://i.imgur.com/69NSeT9.gif';
 
 checkbox.onclick = function () {
