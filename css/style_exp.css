@@ -1,3 +1,7 @@
+::selection {
+    background: yellow;
+}
+
 body {
     background: rgb(255, 255, 255);
     font-family: 'Courier New', Courier, monospace;
@@ -8,10 +12,11 @@ body {
 }
 
 h2 {
+    
     color: rgb(22, 22, 22);
     padding: 0; 
     font-size: 40px;
-    line-height: 0.05;
+    line-height: 40px;
     font-family: Helvetica, Arial, sans-serif;
     
 
@@ -60,6 +65,8 @@ button {
   }
   
   .page-leftbar {
+    display: flex;
+    align-items: center;
     grid-area: leftbar;
   }
   
