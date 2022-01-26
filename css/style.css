@@ -74,3 +74,6 @@ button {
 .post_it {
     cursor: pointer;
 }
+.spacer{
+    width: 5%;
+}

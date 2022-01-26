@@ -10,7 +10,7 @@ class Header extends HTMLElement {
         header {
         font-family: 'Courier New', Courier, monospace;
         
-        width: 99%;
+        width: 98%;
         padding: 10px 10px 10px 10px;   
         }
 
@@ -101,7 +101,7 @@ class Header extends HTMLElement {
             display: flex;
             justify-content: right;
             position: fixed;
-            width: 99%;
+            width: 98%;
             z-index: 1
         }
         
