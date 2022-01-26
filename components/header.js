@@ -7,12 +7,55 @@ class Header extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <style>
-      
         header {
-            font-family: 'Courier New', Courier, monospace;
-            width: 99%;
-            padding: 10px 10px 10px 10px;   
+        font-family: 'Courier New', Courier, monospace;
+        
+        width: 99%;
+        padding: 10px 10px 10px 10px;   
         }
+
+        label:hover, input:checked ~ label{background:yellow;padding: 5 5 5 5;}
+        label{ 
+          
+          cursor:pointer;
+        }
+        
+        ul.submenu{
+            font-family: 'Courier New', Courier, monospace; font-size: 12px;
+            max-height:0;
+            padding:0;
+            overflow:hidden;
+            list-style-type:none;
+            background:#f2f2f2;
+            center: 5;
+            transition:max-height 0.5s ease-out;
+            position:absolute;
+            white-space:wrap;
+            min-width:10%;
+             
+        }
+        ul.submenu li a{
+            display:block;
+            padding:08px;
+            background:#f1f1f1;
+            color:black;
+            text-decoration:none;
+            transition:background .3s;
+            white-space:wrap;
+
+        }
+        ul.submenu li a:hover{
+            background:yellow;
+        }
+        
+        input{display:none}
+    
+        input:checked ~ ul.submenu{
+          max-height:300px;
+          transition:max-height 0.5s ease-in;
+        }
+
+        
      
         nav{
           font-family: 'Courier New', Courier, monospace;
@@ -87,9 +130,18 @@ class Header extends HTMLElement {
       <header>  
         <nav>
             <ul >
-                <li class="menu"> <a href="https://jantjan.github.io/portfolio.html"> Portfolio </a></li>
                 <li class="menu"> <a href="https://jantjan.github.io/experience.html"> About </a></li>
-                <li class="menu"> <a href="index.html"> Home </a></li>
+                <li class="drop_menu">
+                <input id="check01" type="checkbox" name="drop_menu"/>
+                <label for="check01">Portfolio</label>
+
+                  <ul class="submenu">
+                    <li><a href="https://jantjan.github.io/portfolio.html"> Product Design </a> </li>
+                    <li><a href="https://jantjan.github.io/portfolio.html"> Visual Design </a></li>
+                  </ul>
+                
+                </li>
+                <li class="menu"> <a href="https://jtjan.me"> Home </a></li>
             </ul>
         </nav>
     </header>
