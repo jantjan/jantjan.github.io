@@ -7,6 +7,12 @@ body {
     font-weight: bold;
     color: rgb(26, 26, 26);
 }
+.pfp{
+    display: flex;
+    Justify-Content:center;
+    align-items: center;
+    
+}
 .hero {
     position: relative;
     top: 500;
