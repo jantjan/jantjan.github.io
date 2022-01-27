@@ -137,7 +137,12 @@ class Header extends HTMLElement {
 
       </style>
 
-      <header>  
+      <header>
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-54XJFPM"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+      
         <nav>
             <ul >
                 <li class="menu"> <a href="https://jantjan.github.io/experience.html"> About </a></li>
