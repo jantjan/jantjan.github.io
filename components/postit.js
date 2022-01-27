@@ -1,8 +1,8 @@
 
 
 var checkbox1 = document.getElementById('checkbox1');
-    var img_1_1 = 'https://i.imgur.com/FT27YXo.png';
-    var img_1_2 = 'https://i.imgur.com/69NSeT9.gif';
+    var img_1_1 = 'https://i.imgur.com/4YjnVUM.png';
+    var img_1_2 = 'https://i.imgur.com/EG2XTjk.gif';
 checkbox1.onclick = function () {
     if (checkbox1.src == img_1_1) {
         checkbox1.src = img_1_2;
