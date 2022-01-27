@@ -30,7 +30,8 @@ class Head extends HTMLElement {
         <link rel="icon" href="assets/LOGO.jpeg">
         <meta name="author" content="Janice Tjan" />
 
-        <script src="components/header.js" type="text/javascript" defer></script>
+        <script language = "javascript" src="components/header.js" type="text/javascript" defer></script>
+        <script language = "javascript" src="/components/postit.js" type="text/javascript" defer></script> 
     </head>
     `;
   }
