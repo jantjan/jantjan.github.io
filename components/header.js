@@ -107,9 +107,19 @@ class Header extends HTMLElement {
         
         .footer-content-right {
             padding-right:5px;
-            margin-top:20px;
+            margin-top:10px;
             float:right;
           }
+
+          .footer-content-left {
+            padding-left:5px;
+            margin-top:10px;
+            float:left;
+            justify-content: left;
+            background-color: rgb(0,0,0,0);
+          }
+
+         
           
           .icon-style {
             height:40px;
@@ -152,6 +162,11 @@ class Header extends HTMLElement {
         <a href="mailto:tjan.janice@gmail.com" target="_blank"><img src="assets/email_symbol.png" class="icon-style" alt="Emailicon"></a>
     </footer>
 
+    <footer class="footer-content-left">
+    © by Janice Tjan <script type="text/javascript"> document.write(new Date().getFullYear()); </script> 
+    </footer>
+    
+    
     `;
   }
 
