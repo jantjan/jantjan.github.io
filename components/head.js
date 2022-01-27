@@ -6,7 +6,7 @@ class Head extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
-    <head>
+    
         <!-- Global site tag (gtag.js) - Google Analytics -->
             <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180288618-1"></script>
             <script>
@@ -29,10 +29,10 @@ class Head extends HTMLElement {
         <meta name="keywords" content="Janice Tjan, Design degree, MIT, Mechanical Engineering, Portfolio" />
         <link rel="icon" href="assets/LOGO.jpeg">
         <meta name="author" content="Janice Tjan" />
-
         <script language = "javascript" src="components/header.js" type="text/javascript" defer></script>
         <script language = "javascript" src="/components/postit.js" type="text/javascript" defer></script> 
-    </head>
+        
+    
     `;
   }
 
