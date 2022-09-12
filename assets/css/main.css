@@ -13,7 +13,7 @@
     --  06. Tab --> Panel
     --  07. Tab --> Work
     --  08. Tab --> About
-    --  09. Tab --> Service
+    --  09. Tab --> experience
     --  10. Tab --> Contact
     --  11. Footer
  
@@ -27,18 +27,22 @@
 *******************************************************************/
 html
 {
-    font-size: 10px;
+    font-size: 12px;
+   
 }
+::selection {
+    background: #fff;
+  }
 body
 {
     
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Rubik', sans-serif;
 
     font-weight: 300;
     font-style: normal;
 
-    color: #fff;
-    background: #000;
+    color: #2b2b2b;
+    background: #ebecec;
 
     -webkit-font-smoothing: antialiased;
 }
@@ -50,17 +54,17 @@ h4,
 h5,
 h6
 {
-    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
-    font-weight: bold;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
 
-    letter-spacing: .01em;
+    letter-spacing: .005em;
 
-    color: #fff;
+    color: #2b2b2b;
 }
 
 h1
 {
-    font-size: 4rem;
+    font-size: 2rem;
 }
 
 h2
@@ -85,16 +89,23 @@ h5
 
 h6
 {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
+    line-height: 1.8em;
+
+    letter-spacing: .02em;
+    font-weight: 500;
+    color: #696969;
 }
 
 p
 {
     font-size: 1.5rem;
-    line-height: 2em;
+    line-height: 1.8em;
 
     letter-spacing: .02em;
 }
+
+
 
 a,
 a:hover,
@@ -106,7 +117,7 @@ a:focus
             transition: all 300ms ease;
     text-decoration: none;
 
-    color: #fff;
+    color: #2b2b2b;
 }
 
 #container-main
@@ -120,7 +131,7 @@ a:focus
 {
     html
     {
-        font-size: 8px;
+        font-size: 10px;
     }
 }
 
@@ -128,7 +139,7 @@ a:focus
 {
     html
     {
-        font-size: 7px;
+        font-size: 9px;
     }
 }
 
@@ -149,7 +160,7 @@ a:focus
     width: 100%;
     height: 100%;
 
-    background: #fff;
+    background: #2b2b2b;
 }
 
 .preloader.hide-preloader
@@ -181,7 +192,7 @@ a:focus
 
     opacity: 1;
     border-radius: 100%;
-    background-color: #111;
+    background-color: #D3B251;
 }
 
 .preloader.hide-preloader .spinner
@@ -282,7 +293,7 @@ a:focus
 {
     position: relative;
 
-    margin-top: 20vh;
+    margin-top: 10vh;
 
     text-align: left;
 }
@@ -291,7 +302,11 @@ a:focus
 {
     margin-top: 0;
     margin-bottom: 4.5rem;
+    width: 30%;
+    float: left;
 }
+
+
 
 #intro h1
 {
@@ -300,21 +315,21 @@ a:focus
     max-width: 740px;
     margin-top: 0;
     margin-bottom: 1em;
+    width: 69.5%;
+    float: right;
 }
 
 #intro p.subline
 {
-    font-size: 2.2rem;
-    line-height: 1.8em;
-
-    display: inline-block;
+    font-size: 3 rem;
+    line-height: 1.5em;
 
     max-width: 800px;
     margin: 0;
     margin-right: .8em;
-    margin-bottom: 6rem;
-
-    vertical-align: middle;
+    margin-bottom: 4rem;
+    width: 68%;
+    float: right;
     letter-spacing: .02em;
 }
 
@@ -407,16 +422,76 @@ a:focus
     opacity: 1;
 }
 
-@media (max-width:970px)
-{
-    #intro
+@media only screen and (max-width: 855px) {
+    #intro{
+        margin-top: 5vh;
+    }
+    #intro .logo {
+        margin-top: 0;
+        margin-bottom: 0.1rem;
+        width: 100%;
+        display: inline-block;
+        
+    }
+    #intro h1
     {
-        margin-top: 14vh;
+        line-height: 130%;
+        font-size: 140%;
+        margin-top: 0;
+        margin-bottom: 5%;
+       
+        float: left;
+        
+    }
+    
+    #intro p.subline
+    {
+        line-height: 105%;
+        font-size: 110%;
+        margin-top: 0;
+        margin-bottom: 1em;
+        float: left;
+        width:105%;
+       
+    }
+    @media only screen and (max-width: 855px) {
+        #intro{
+            margin-top: 5vh;
+        }
+        #intro .logo {
+            margin-top: 0;
+            margin-bottom: 0.1rem;
+            width: 100%;
+            padding: 0 10% 0 10%;
+            display: inline-block;
+            
+        }
+        #intro h1
+        {
+            line-height: 130%;
+            font-size: 140%;
+            margin-top: 0;
+            margin-bottom: 5%;
+           
+            float: left;
+            
+        }
+        
+        #intro p.subline
+        {
+            line-height: 105%;
+            font-size: 110%;
+            margin-top: 0;
+            margin-bottom: 1em;
+            float: left;
+            width:105%;
+           
+        }
+
     }
 }
-
-
-
+    
+    
 /** 5. Tab --> Navigation
 *******************************************************************/
 
@@ -424,7 +499,7 @@ a:focus
 {
     margin: 0;
     padding: 0;
-
+    float:center;
     list-style: none;
 
     border: none;
@@ -434,8 +509,8 @@ a:focus
 {
     display: inline-block;
 
-    margin-right: 3rem;
-    margin-bottom: 3.5rem;
+    margin-right: 2%;
+    margin-bottom: 1rem;
 }
 
 .tab-navigation li:last-child
@@ -445,20 +520,21 @@ a:focus
 
 .tab-navigation li a
 {
-    font-size: 2rem;
-    line-height: 2.8em;
-
+    line-height: 200%;
+    font-size: 130%;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
     display: block;
 
-    padding: 0 2em 0 2em;
+    padding: 0 1em 0 1em;
 
-    border: 2px solid #fff;
+    border: 3px solid #D3B251;
     border-radius: 100px;
 }
 
 .tab-navigation li.active a
 {
-    padding: 0 2em 0 2.4em;
+    padding: 0 3em 0 3.4em;
 }
 
 .tab-navigation li a span
@@ -466,14 +542,16 @@ a:focus
     position: relative;
 }
 
-.tab-navigation li a span:before
+.tab-navigation li a span:before 
+/* Dot Accent */
+
 {
     position: absolute;
     top: 50%;
     left: -1.5rem;
 
-    width: 6px;
-    height: 6px;
+    width: 8px;
+    height: 8px;
 
     content: '';
     -webkit-transition: .3s ease;
@@ -486,7 +564,7 @@ a:focus
 
     opacity: 0;
     border-radius: 100%;
-    background: #fff;
+    background: #D3B251;
 }
 
 .tab-navigation li.active a span:before
@@ -494,6 +572,78 @@ a:focus
     opacity: 1;
 }
 
+@media only screen and (max-width: 995px) {
+    .tab-navigation li a
+    {
+        line-height: 200%;
+        font-size: 130%;
+        font-family: 'Roboto Mono', monospace;
+        font-weight: 600;
+       
+    
+        padding: 0 0.6em 0 0.6em;
+    
+        border: 3px solid #D3B251;
+        border-radius: 100px;
+    }
+    .tab-navigation li{
+    display: inline-block;
+
+    margin-right: 2%;
+    margin-bottom: 3rem;}
+
+    .tab-navigation li.active a
+    {
+        padding: 0 2.4em 0 2.7em;
+    }
+    .tab-navigation li a{
+        line-height: 180%;
+        font-size: 115%;
+        font-family: 'Roboto Mono', monospace;
+        font-weight: 600;
+      
+    
+        padding: 0 1.1em 0 1.1em;
+    
+        border: 3px solid #D3B251;
+        border-radius: 100px;
+        }
+}
+
+@media only screen and (max-width: 555px) {
+    .tab-navigation
+    {
+        margin: 0;
+        padding-top: 1em;
+        float:left;
+        list-style: none;
+    
+        border: none;
+    }
+    .tab-navigation li{
+        display: inline-block;
+    
+        margin-right: 2%;
+        margin-bottom: 1rem;}
+
+    .tab-navigation li a{
+    line-height: 180%;
+    font-size: 110%;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 600;
+    display: block;
+
+    padding: 0 1.1em 0 1.1em;
+
+    border: 3px solid #D3B251;
+    border-radius: 100px;
+    }
+
+    @media only screen and (max-width: 995px) {
+
+
+    }
+}
 
 
 /** 6. Tab --> Panel
@@ -543,8 +693,8 @@ a:focus
     content: '';
 
     opacity: 0;
-    border-bottom: 2px solid #fff;
-    border-left: 2px solid #fff;
+    border-bottom: 3px solid #fff;
+    border-left: 3px solid #fff;
 }
 
 #work .item:hover:before
@@ -588,7 +738,8 @@ a:focus
     pointer-events: none;
 
     opacity: 0;
-    background: rgba(6, 30, 50, .75);
+   
+    background: hsl(180, 3%, 92%,80%)
 }
 
 #work .item:hover .info
@@ -611,8 +762,9 @@ a:focus
 
 #work .item .info h5
 {
-    font-weight: 400;
-
+    font-weight: 600;
+    font-size: 8em;
+    
     margin-top: 0;
     margin-bottom: 0;
 
@@ -668,8 +820,7 @@ a:focus
     padding: 0;
 
     border-bottom: 0;
-    background: rgba(6, 30, 50, .8);
-}
+    background: #fff}
 
 .featherlight .featherlight-content  .featherlight-close-icon
 {
@@ -733,14 +884,78 @@ a:focus
     {
         padding: 8rem 9rem;
     }
+    #work .item
+    {
+        position: relative;
+
+        display: block;
+        overflow: hidden;
+
+        height: 20rem;
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width:550px)
+{
+    .featherlight .featherlight-content .work-lightbox
+    {
+        padding: 8rem 9rem;
+    }
+    #work .item
+    {
+        position: relative;
+
+        display: block;
+        overflow: hidden;
+
+        height: 35rem;
+        margin-bottom: 2rem;
+    }
 }
 
 
-
-/** 8. Tab --> About
+/** 8. Tab --> experience
 *******************************************************************/
 
-#about
+#experience
+{
+    margin-bottom: 6rem;
+}
+
+#experience i
+{
+    font-size: 1.6rem;
+
+    display: inline-block;
+
+    margin-right: 1em;
+    padding: .8em;
+
+    vertical-align: middle;
+
+    border: 2px solid #2b2b2b;
+    border-radius: 100%;
+}
+
+#experience h5
+{
+    display: inline-block;
+
+    vertical-align: middle;
+}
+
+#experience p
+{
+    margin: 1.5em 0 3em 0;
+    padding: 0 2rem 0 0;
+}
+
+
+/** 9. Tab --> About
+*******************************************************************/
+
+#About
 {
     margin-bottom: 8rem;
 }
@@ -754,44 +969,6 @@ a:focus
 #about p
 {
     margin-bottom: 2em;
-}
-
-
-
-/** 9. Tab --> Service
-*******************************************************************/
-
-#service
-{
-    margin-bottom: 6rem;
-}
-
-#service i
-{
-    font-size: 1.6rem;
-
-    display: inline-block;
-
-    margin-right: 1em;
-    padding: .8em;
-
-    vertical-align: middle;
-
-    border: 2px solid #fff;
-    border-radius: 100%;
-}
-
-#service h5
-{
-    display: inline-block;
-
-    vertical-align: middle;
-}
-
-#service p
-{
-    margin: 1.5em 0 3em 0;
-    padding: 0 2rem 0 0;
 }
 
 
@@ -819,7 +996,7 @@ a:focus
 #contact #contact-form textarea,
 #contact #contact-form button
 {
-    font-size: 2rem;
+    font-size: 1.75rem;
 
     margin-bottom: 3.4vh;
 
@@ -827,9 +1004,9 @@ a:focus
          -o-transition: .3s ease;
             transition: .3s ease;
 
-    color: #fff;
+    color: #2b2b2b;
     border: none;
-    border-bottom: 2px solid #fff;
+    border-bottom: 3px solid #2b2b2b;
     border-radius: 0;
     outline: none !important;
     background: none;
@@ -860,25 +1037,25 @@ a:focus
 #contact #contact-form input::-webkit-input-placeholder,
 #contact #contact-form textarea::-webkit-input-placeholder
 {
-    color: #fff;
+    color: #D3B251;
 }
 
 #contact #contact-form input:-ms-input-placeholder,
 #contact #contact-form textarea:-ms-input-placeholder
 {
-    color: #fff;
+    color: #D3B251;
 }
 
 #contact #contact-form input::-ms-input-placeholder,
 #contact #contact-form textarea::-ms-input-placeholder
 {
-    color: #fff;
+    color: #D3B251;
 }
 
 #contact #contact-form input::placeholder,
 #contact #contact-form textarea::placeholder
 {
-    color: #fff;
+    color: #D3B251;
 }
 
 #contact #contact-form input.error,
@@ -941,7 +1118,7 @@ a:focus
 
     vertical-align: middle;
 
-    border: 2px solid #fff;
+    border: 3px solid #D3B251;
     border-radius: 100%;
 }
 
@@ -1013,7 +1190,7 @@ a:focus
     pointer-events: none;
 
     opacity: 0;
-    color: #fff;
+    color: #2b2b2b;
     border: 2px solid limegreen;
     border-radius: 0;
     background: none;
@@ -1093,7 +1270,7 @@ a:focus
 
     text-align: center;
 
-    color: #fff;
+    color: #D3B251;
     border-radius: 100%;
     background: none;
 }
@@ -1112,7 +1289,7 @@ a:focus
 
     display: block;
 
-    color: #fff;
+    color: #D3B251;
     border: none;
 }
 
