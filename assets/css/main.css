@@ -291,8 +291,8 @@ a:focus
 
 #intro
 {
-    position: relative;
-
+    
+    top: 0;
     margin-top: 10vh;
 
     text-align: left;
@@ -499,17 +499,18 @@ a:focus
 {
     margin: 0;
     padding: 0;
-    float:center;
+    
     list-style: none;
-
+    
     border: none;
 }
 
 .tab-navigation li
-{
+{   
     display: inline-block;
 
     margin-right: 2%;
+    
     margin-bottom: 1rem;
 }
 
@@ -519,7 +520,7 @@ a:focus
 }
 
 .tab-navigation li a
-{
+{   
     line-height: 200%;
     font-size: 130%;
     font-family: 'Roboto Mono', monospace;
@@ -536,14 +537,15 @@ a:focus
 {
     padding: 0 3em 0 3.4em;
 }
+/* Dot Accent */
 
 .tab-navigation li a span
 {
     position: relative;
+    
 }
 
 .tab-navigation li a span:before 
-/* Dot Accent */
 
 {
     position: absolute;
