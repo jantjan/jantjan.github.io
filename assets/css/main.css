@@ -879,7 +879,7 @@ text-align: right;
     margin-bottom: 0;
 }
 
-@media (max-width:900px)
+@media (max-width:950px)
 {
     .featherlight .featherlight-content .work-lightbox
     {
@@ -933,7 +933,7 @@ text-align: right;
 
 #experience
 {
-    margin-bottom: 6rem;
+    margin-bottom: 3rem;
 }
 
 #experience i
