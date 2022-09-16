@@ -879,7 +879,7 @@ text-align: right;
     margin-bottom: 0;
 }
 
-@media (max-width:950px)
+@media (max-width:900px)
 {
     .featherlight .featherlight-content .work-lightbox
     {
@@ -1067,7 +1067,7 @@ text-align: right;
 #contact #contact-form textarea,
 #contact #contact-form button
 {
-    font-size: 2rem;
+    font-size: 1.75rem;
 
     margin-bottom: 3.4vh;
 
@@ -1075,9 +1075,9 @@ text-align: right;
          -o-transition: .3s ease;
             transition: .3s ease;
 
-    color: #fff;
+    color: #2b2b2b;
     border: none;
-    border-bottom: 2px solid #fff;
+    border-bottom: 3px solid #2b2b2b;
     border-radius: 0;
     outline: none !important;
     background: none;
@@ -1108,25 +1108,25 @@ text-align: right;
 #contact #contact-form input::-webkit-input-placeholder,
 #contact #contact-form textarea::-webkit-input-placeholder
 {
-    color: #fff;
+    color: #D3B251;
 }
 
 #contact #contact-form input:-ms-input-placeholder,
 #contact #contact-form textarea:-ms-input-placeholder
 {
-    color: #fff;
+    color: #D3B251;
 }
 
 #contact #contact-form input::-ms-input-placeholder,
 #contact #contact-form textarea::-ms-input-placeholder
 {
-    color: #fff;
+    color: #D3B251;
 }
 
 #contact #contact-form input::placeholder,
 #contact #contact-form textarea::placeholder
 {
-    color: #fff;
+    color: #D3B251;
 }
 
 #contact #contact-form input.error,
@@ -1189,7 +1189,7 @@ text-align: right;
 
     vertical-align: middle;
 
-    border: 2px solid #fff;
+    border: 3px solid #D3B251;
     border-radius: 100%;
 }
 
@@ -1261,7 +1261,7 @@ text-align: right;
     pointer-events: none;
 
     opacity: 0;
-    color: #fff;
+    color: #2b2b2b;
     border: 2px solid limegreen;
     border-radius: 0;
     background: none;
@@ -1284,6 +1284,8 @@ text-align: right;
 
     margin-right: .7em;
 }
+
+
 
 /** 11. Section --> Footer
 *******************************************************************/
