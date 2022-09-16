@@ -17,20 +17,20 @@ if($_POST) {
     $array = array("nameMessage" => "", "emailMessage" => "", "messageMessage" => "","succesMessage" => "");
 
     if($name == "") {
-    	$array["nameMessage"] = "x";
+    	$array["nameMessage"] = "NO NAME";
     }
 	
     if(!filter_var($clientEmail, FILTER_VALIDATE_EMAIL)) {
-        $array["emailMessage"] = "x";
+        $array["emailMessage"] = "INVALID EMAIL";
     }
 	
     if($message == "") {
-        $array["messageMessage"] = "x";
+        $array["messageMessage"] = "NONE";
     }
 	
     if($name != "" && filter_var($clientEmail, FILTER_VALIDATE_EMAIL) && $message != "" && $fhp_input == "") {
 		
-		$array["succesMessage"] = "";
+		$array["successMessage"] = "";
 		
 		$headers  = "MIME-Version: 1.0" . "\r\n";
         $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
