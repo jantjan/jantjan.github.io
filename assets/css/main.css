@@ -965,6 +965,15 @@ text-align: right;
 }
 
 
+    margin: 0 0 0 3em;
+    list-style-type:none
+   }
+
+   .square {
+    margin: 0 0 0 2em;
+    list-style-type: square;
+    
+   }
 /** 9. Tab --> About
 *******************************************************************/
 
